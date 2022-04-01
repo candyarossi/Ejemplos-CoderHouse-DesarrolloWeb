@@ -1,0 +1,21 @@
+/* Estilos Generales */
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+}
+
+.extra {
+    background-color: grey;
+    border: solid 5px black;
+    border-radius: 5px;
+}

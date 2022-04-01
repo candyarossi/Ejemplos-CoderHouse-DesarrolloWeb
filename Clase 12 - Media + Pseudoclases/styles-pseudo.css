@@ -1,0 +1,35 @@
+/* Pseudoclases */
+
+
+/* Docu: https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes*/
+
+a {
+    margin-top: 15px;
+    text-decoration: none;
+    color: white !important;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: blueviolet !important;
+}
+
+a:link {
+    background-color: darkturquoise;
+}
+
+a:visited {
+    background-color: crimson;
+}
+
+a:active {
+    background-color: yellowgreen !important;
+}
+
+a:not(.boton) {
+    background-color: deeppink;
+}
+
+.card-body a:nth-child(2) {
+    background-color: dimgrey !important;
+}

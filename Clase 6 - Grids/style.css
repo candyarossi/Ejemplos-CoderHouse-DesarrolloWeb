@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.padre {
+    background-color: lightblue;
+}
+
+.hijo {
+    background-color: lightskyblue;
+    border: solid 1px blue;
+}
+
+#productos div,
+#servicios div {
+    border: solid 1px;
+    padding: 5px;
+    background-color: bisque;
+}

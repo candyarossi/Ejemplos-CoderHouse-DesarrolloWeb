@@ -1,0 +1,39 @@
+@import "_colores";
+@import "_tipografias";
+
+/*
+$tipografiaPrincipal: normal 24px/1.5 'Open Sans',
+sans-serif;
+$colorPrimario: cadetblue;
+*/
+
+body {
+    font: $tipografiaPrincipal;
+}
+
+.row {
+    background-color: aquamarine;
+    div {
+        /*border: solid 2px cadetblue;*/
+        border: solid 2px $colorPrimario;
+        h2 {
+            text-decoration: underline;
+        }
+    }
+}
+
+header div {
+    $colorHover: greenyellow;
+    background-color: lightblue;
+    button {
+        /*background-color: cadetblue !important;*/
+        background-color: $colorPrimario !important;
+        &:hover {
+            background-color: $colorHover !important;
+        }
+    }
+}
+ 
+footer {
+    background-color: $colorHover;
+}

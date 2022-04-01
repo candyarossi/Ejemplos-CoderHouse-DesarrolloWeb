@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+</head>
+<body>
+    <!-- Listas desordenadas y tipos de viñeta -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ul type="square">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ul type="circle">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ul type="disc">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- Listas ordenadas y tipos de viñeta -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <ol type="a">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <ol type="A">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <ol type="i">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <ol type="I">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <ol type="1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <!-- Listas de términos y descripciones -->
+    <dl>
+        <dt>Termino 1</dt>
+            <dd>Descripcion 1</dd>
+        <dt>Termino 2</dt>
+            <dd>Descripcion 2</dd>
+    </dl>
+
+    <!-- Listas en línea -->
+    <ul>
+        <li style="float: left">Item 1</li>
+        <li style="float: left">Item 2</li>
+        <li style="float: left">Item 3</li>
+    </ul>
+
+    <br>
+
+    <ul>
+        <li style="display: inline">Item 1</li>
+        <li style="display: inline">Item 2</li>
+        <li style="display: inline">Item 3</li>
+    </ul>
+
+    <!-- Estructura básica de una tabla -->
+    <table>
+        <caption>Esta es una tabla</caption>
+        <thead>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+                <td>Dato 3</td>
+            </tr>
+            <tr>
+                <td>Dato 4</td>
+                <td>Dato 5</td>
+                <td>Dato 6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Foot 1</td>
+                <td>Foot 2</td>
+                <td>Foot 3</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Formularios
+    Atributos:
+    * method -> GET o POST
+    * enctype -> application/x-www-form-urlencoded , multipart/form-data o text/plain 
+    -->
+    <form action="#" method="GET" enctype="text/plain"> 
+
+        <!-- Tipos de inputs -->
+        <input name="..." type="text">
+        <input name="..." type="password">
+        <input name="..." type="radio" value="Opción 1">
+        <input name="..." type="checkbox" value="Opción 2">
+        <input name="..." type="color">
+        <input name="..." type="email">
+        <input name="..." type="file">
+        <input name="..." type="hidden">
+        <input name="..." type="image">
+        <input name="..." type="number">
+        <input name="..." type="range">
+        <input name="..." type="search">
+        <input name="..." type="tel">
+        <input name="..." type="time">
+        <input name="..." type="date">
+        <input name="..." type="datetime">
+        <input name="..." type="datetime-local">
+        <input name="..." type="week">
+        <input name="..." type="month">
+        <input name="..." type="url">
+        <input name="..." type="submit" value="Submit">
+        <input name="..." type="reset" value="Reset">
+        <input name="..." type="button" value="Button">
+
+        <label for="texto">Label Texto:</label>
+        <input name="texto" type="text" placeholder="Un texto...">
+
+        <select name="talles">
+            <option value="L">Large</option>
+            <option value="M">Medium</option>
+            <option value="S">Small</option>
+        </select>
+
+        <fieldset>
+            <legend>Listas de Medidas para Calcular Talles:</legend>
+              <!-- Aquí irán los elementos de formulario -->
+        </fieldset>
+    </form>
+    
+    <!-- Enlaces -->
+    <a href="https://www.coderhouse.com" target="_blank">Enlace</a>
+
+    <!-- Etiqueta Img
+    Atributos:
+    * src -> fuente de la imagen
+    * width -> ancho (en pixeles o con porcentaje)
+    * height -> alto (en pixeles o con porcentaje)
+    * alt -> texto alternativo para cuando no se carga la imagen
+    * title -> texto que se muestra cuando pasas el mouse por encima de la imagen
+    -->
+    <img src="#" height="" width="" alt="texto alternativo" title="titulo">
+
+    <!-- Etiqueta Video
+    Atributos:
+    * src -> fuente del video
+    * autoplay -> para reproducir automáticamente
+    * controls -> incluye los controles de play/pause y volumen
+    * loop -> reproduce el video infinitamente
+    * poster -> agrega una miniatura al video
+    -->
+    <video src="#" controls loop autoplay poster="#"> 
+         Tu navegador no es compatible. 
+    </video> 
+ 
+    <!-- Etiqueta Audio
+    Atributos:
+    * src -> fuente del audio
+    * autoplay -> para reproducir automáticamente
+    * controls -> incluye los controles de play/pause y volumen
+    -->
+    <audio src="#" controls autoplay> 
+        Tu navegador no es compatible. 
+    </audio>
+
+    <!-- Etiqueta Iframe -->
+    <iframe src="#" width="" height="">
+        Texto para cuando el navegador no reconoce la etiqueta iframe.
+    </iframe>
+
+</body>
+</html>

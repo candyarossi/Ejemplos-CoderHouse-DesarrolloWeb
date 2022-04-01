@@ -1,0 +1,175 @@
+        #divGradiente {
+            width: 100%;
+            height: 780px;
+            /* Valores de la funcion linear-gradient() 
+    - Primer valor: dirección -> to top, to left, to bottom, to right 
+    - Segundo y demás valores: colores */
+            background: linear-gradient(to bottom, red, white, green);
+        }
+        
+        #divFondo {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            z-index: -1;
+            border: solid 2px black;
+        }
+        
+        #divTransform {
+            width: 400px;
+            height: 400px;
+            background-color: rgba(255, 0, 0, 0.5);
+            /* Desplazamiento en eje X y en eje Y */
+            /*transform: translate(50px, 20px);*/
+            /* Rotación expresada en grados (deg) */
+            /*transform: rotate(50deg);*/
+            /* Rotación en eje X */
+            /*transform: rotateX(50deg);*/
+            /* Rotación en eje Y */
+            /*transform: rotateY(50deg);*/
+            /* Rotación en eje Z */
+            /*transform: rotateZ(50deg);*/
+            /* Escalar en ancho y alto */
+            /*transform: scale(-1, 1);*/
+            /* Sesgar expresado en grados(deg) */
+            /*transform: skew(20deg, 10deg);*/
+            /* Sesgar en eje X */
+            /*transform: skewX(20deg);*/
+            /* Sesgar en eje Y */
+            /*transform: skewY(20deg);*/
+            /**/
+        }
+        
+        #divTransition {
+            width: 400px;
+            height: 400px;
+            background-color: rgba(255, 0, 0, 0.5);
+            /* Transición para cambiar altura */
+            transition: height 2s;
+            /* Cambiamos altura y ancho */
+            transition: height 2s, width 1s;
+            /* Cambiamos todas las propiedades que hayan variado */
+            transition: all 2s;
+        }
+        
+        #divTransition:hover {
+            height: 200px;
+            width: 300px;
+            background-color: rgba(0, 255, 0, 0.5);
+        }
+        
+        input {
+            width: 80px;
+            height: 50px;
+            transition: all 2s;
+        }
+        
+        input:focus {
+            width: 100px;
+            height: 70px;
+            font-size: 24px;
+        }
+        
+        #divAnim {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            /* Debemos darle un nombre a la animación para luego asignarle sus keyframes */
+            animation-name: un_efecto;
+            /* Define el numero de veces que un ciclo de animación debe ser ejecutado antes de detenerse */
+            /* Valores: infinite o <números> */
+            animation-iteration-count: infinite;
+            /* Especifica cómo una animación CSS debe avanzar sobre la duración de cada ciclo */
+            /* Valores: 
+            - ease
+            - ease-in
+            - ease-out
+            - ease-in-out
+            - linear
+            - step-start
+            - step-end
+            */
+            animation-timing-function: ease;
+            /* Indica la cantidad de tiempo que la animación tarda en completar un ciclo (duración) */
+            animation-duration: 3s;
+            /* Especifica el tiempo de retardo que debe transcurrir antes de comenzar la animación */
+            animation-delay: 4s;
+            /* Indica si la animación debe retroceder hasta el fotograma de inicio al finalizar la secuencia o si debe comenzar desde el principio al llegar al final */
+            animation-direction: alternate;
+        }
+        /**/
+        /*La regla @keyframes permite a los autores controlar los pasos intermedios 
+        en una secuencia de animación CSS mediante el establecimiento de keyframes 
+        (o puntos de trayectoria)*/
+        
+        @keyframes un_efecto {
+            0% {
+                width: 100px;
+            }
+            25% {
+                width: 300px;
+            }
+            50% {
+                width: 200px;
+                background-color: red;
+            }
+            75% {
+                width: 300px;
+            }
+            100% {
+                width: 100px;
+                background-color: green;
+            }
+        }
+        /**/
+        
+        div.animame {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 0, 0, 0.9);
+            border: solid 1px;
+        }
+        
+        div {
+            position: relative;
+            Left: 200px;
+            top: 50px;
+        }
+        
+        div:not(.animame) {
+            border: solid 1px;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 207px;
+            top: 57px;
+        }
+        
+        @keyframes animacion {
+            from {}
+            to {
+                /* probar propiedades */
+                transform: skewY(25deg)
+            }
+        }
+        /* configuracion inicial */
+        
+        .animame {
+            /* Animation, valores en orden: name - duration - timingfunction - delay - iterationcount - direction */
+            animation: animacion 1s linear 3s infinite alternate;
+        }
+        
+        h1 {
+            animation-duration: 2s;
+            animation-name: aparecer;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes aparecer {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }

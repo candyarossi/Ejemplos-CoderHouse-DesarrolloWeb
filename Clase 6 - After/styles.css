@@ -1,0 +1,59 @@
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+section {
+    grid-area: section;
+}
+
+nav {
+    grid-area: nav;
+}
+
+aside {
+    grid-area: aside;
+}
+
+#main {
+    /* Activa la grilla */
+    display: grid;
+    /* Tamaño de columnas */
+    grid-template-columns: 15% auto;
+    /* Tamaño de filas */
+    grid-template-rows: 15% 10% auto 15%;
+    /* Espacio entre columnas */
+    grid-column-gap: 10px;
+    /* Espacio entre filas */
+    grid-row-gap: 10px;
+    /* Establecer cantidad de celdas que ocupan las areas */
+    grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+}
+
+section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    /* Eje horizontal */
+    justify-items: stretch;
+    /* Eje vertical */
+    align-items: stretch;
+    /*width: 1000px;
+    height: 1000px;*/
+    /* Eje horizontal en conjunto */
+    /*justify-content: stretch;*/
+    /* Eje vertical en conjunto */
+    /*align-content: stretch;*/
+}
+
+.item {
+    /* Eje horizontal del item */
+    justify-self: stretch;
+    /* Eje vertical del item */
+    align-self: stretch;
+}

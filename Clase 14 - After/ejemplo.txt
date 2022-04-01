@@ -1,0 +1,46 @@
+/* Variables */
+
+$crearArcoiris: "si";
+$mapaColores: (1: red, 2: orange, 3: yellow, 4: green, 5: blue, 6: purple, 7: pink);
+
+/* Imports */
+
+@import "variables";
+@import "contenedores";
+
+/* Mixin con parámetro */
+
+@mixin bordeColor($color) {
+    border-width: 10px;
+    border-style: dotted;
+    border-color: $color;
+}
+
+
+/* Condicional con Bucles dentro */
+
+@if $crearArcoiris=="si" {
+    /* Bucle For */
+    @for $i from 1 through 7 {
+        .color#{$i} {
+            background-color: map-get($mapaColores, $i);
+        }
+    }
+}
+
+@else if $crearArcoiris=="no" {
+    /* Bucle Each */
+    @each $nroColor,
+    $color in $mapaColores {
+        .color#{$nroColor} {
+            @include bordeColor($color);
+        }
+    }
+}
+
+@else {
+    div {
+        /* Extend */
+        @extend .extra;
+    }
+}

@@ -1,0 +1,41 @@
+/* Imports */
+
+@import "variables";
+@import "contenedores";
+
+/* Mixin */
+
+@mixin bordeColor($ancho, $tipo, $color) {
+    border-width: $ancho;
+    border-style: $tipo;
+    border-color: $color;
+}
+
+
+/* Condicional */
+
+@if $crearArcoiris=="si" {
+    /* Bucle For */
+    @for $i from 1 through 7 {
+        .color#{$i} {
+            background-color: map-get($mapaColores, $i);
+        }
+    }
+}
+
+@else if $crearArcoiris=="no" {
+    /* Bucle Each */
+    @each $numero,
+    $color in $mapaColores {
+        .color#{$numero} {
+            @include bordeColor(15px, double, $color);
+        }
+    }
+}
+
+@else {
+    div {
+        /* Extend */
+        @extend .extra;
+    }
+}

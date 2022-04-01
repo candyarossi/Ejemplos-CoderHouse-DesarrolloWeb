@@ -1,0 +1,138 @@
+/* Sintaxis CSS */
+selector {
+    propiedad: valor;
+}
+
+/* Selector de etiqueta */
+body {
+    color: brown;
+}
+
+/* Selector de ID */
+#main {
+    color: brown;
+}
+
+/* Selector de CLASS */
+.media{
+    color: brown;
+}
+
+/* Padres e hijos */
+li a{
+    color:red;
+    background-color: beige;
+}
+
+/* Important */
+a {
+    color: black !important;
+}
+
+/* RESET */
+/* Uno muy completo: https://meyerweb.com/eric/tools/css/reset/ */
+* {
+    margin: 0;
+    padding: 0;
+ }
+
+ /* Ppropiedades CSS */
+p {
+
+    /* COLOR */
+    color: black; 
+    /* 
+    Otros valores: 
+        #000000 
+        rgb(0, 0, 0) 
+    */ 
+
+    /* TEXTO */
+    font-family: 'Roboto' sans-serif;  
+    font-size: 12px;
+    font-style: normal;  
+    /* 
+    Otros valores: 
+        italic
+    */
+    font-weight: normal;  
+    /* 
+    Otros valores: 
+        bold 
+    */
+    text-align: left;  
+    /* 
+    Otros valores: 
+        right
+        center 
+        justify 
+    */
+    text-decoration: none;
+    /* 
+    Otros valores: 
+        underline 
+        line-through 
+    */
+    text-transform: uppercase;  
+    /* 
+    Otros valores: 
+        lowercase 
+        capitalize 
+    */
+    line-height: 14px;
+
+    /* FONDOS */
+    background-attachment: scroll;  
+    /* 
+    Otros valores:
+        fixed 
+     */
+    background-color: beige;  
+    /* 
+    Otros valores:
+        rgb(0,0,0) 
+        #000 
+    */
+    background-image: url('#');
+    background-position: top left;
+    /* 
+    Combinaciones: 
+        top left
+        top center
+        top right
+        center left
+        center center
+        center right
+        bottom left
+        bottom center
+        bottom right
+    */
+    background-repeat: repeat-x; 
+    /* 
+    Otros valores:
+        repeat-x
+        repeat-y
+        repeat
+        space
+        round
+        no-repeat
+        space repeat
+    */
+} 
+
+/* LISTAS */
+ul {
+    list-style-type: none;
+}
+
+ /* 
+ Efecto PARALLAX 
+ https://codepen.io/mablen/pen/bZKPNB 
+ */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+body {
+    font-family: 'Luxurious Roman', cursive;
+}

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+/* Formas de selección de elementos HTML en CSS */
+
+h1 {
+    color: purple;
+}
+
+
+/* Usamos CamelCase */
+
+.tituloFondoRosa {
+    color: white;
+    background-color: deeppink;
+}
+
+#tituloFondoVioleta {
+    color: white;
+    background-color: darkviolet;
+}
+
+
+/* Metodología BEM */
+
+.noticia {
+    background-color: lightgray;
+}
+
+.noticia__titulo {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.noticia__parrafo {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.noticia__titulo--modifier {
+    color: crimson;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+}
+
+
+/* BOX MODEL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.boxModelSpan {
+    background-color: orange;
+    /* Alto y Ancho */
+    width: 100px;
+    height: 100px;
+    /* Overflow:
+        - Visible: valor por defecto. El excedente es visible.  
+        - Hidden: el excedente no se muestra (lo corta) →  recomendado.  
+        - Scroll: genera una barra de scroll en los dos ejes (x/y) del elemento, aunque no se necesite.  
+        - Auto: genera el scroll solo en el eje necesario.
+    */
+    overflow: hidden;
+    /* Margin "márgenes" */
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin: 40px 40px 40px 40px;
+    /* Padding "relleno" */
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    /* Border "bordes" */
+    border-style: solid;
+    border-width: 4px;
+    border-color: red;
+    border: solid 4px red;
+    /**/
+    border-top: solid 5px red;
+    border-right: solid 10px blue;
+    border-bottom: solid 7px green;
+    border-left: solid 12px yellow;
+    display: block;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    left: 50px;
+}
+
+
+/* Menú con SubMenú */
+
+ul {
+    list-style: none;
+    font-size: 0;
+    /* truco por el uso de inline-block*/
+}
+
+li {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 14px
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+
+/* z-index (para el orden de superposición)
+El z-index entra en juego cuando dos elementos que tienen position se superponen. Esta propiedad acepta como valor un número (sin ninguna unidad, ni px, ni cm, ni nada); a valor más alto, se mostrará por encima de los demás elementos. 
+
+Por defecto, todos los objetos tienen z-index:1. Si dos objetos tienen el mismo valor de z-index y se superponen, el que fue creado después en el HTML se verá encima del otro.
+*/
+
+.boxModelSpan {
+    z-index: -1;
+}
+
+
+/* Practica */
+
+#practica {
+    color: #0033ff;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    line-height: 15px;
+    font-size: 12px;
+}

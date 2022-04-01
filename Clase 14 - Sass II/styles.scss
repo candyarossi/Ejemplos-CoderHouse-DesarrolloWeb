@@ -1,0 +1,100 @@
+/* Vars */
+
+$tamanoBoton: 250px;
+$tamanoTipo: 24px;
+
+/* Maps */
+
+$redes:(facebook:#3b5998, whatsapp:#4dc247, youtube:#bb0000);
+
+/* Estilos generales */
+
+div {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 50%;
+    width: $tamanoBoton;
+    height: $tamanoBoton;
+    font-size: $tamanoTipo;
+}
+
+@media (max-width: 550px) {
+    .btn {
+        /* Operaciones: suma (+), resta (-) multiplicación(*), división (/) */
+        width: $tamanoBoton/2;
+        height: $tamanoBoton/2;
+        font-size: $tamanoTipo/2;
+        /* Condicional */
+        /* Comparaciones: igual a (==), diferente a (!=), menor (<), mayor (>), menor o igual (<=), mayor o igual (>=) */
+        @if $tamanoBoton/2<=50px {
+            background-color: blueviolet;
+        }
+        @else {
+            background-color: chartreuse;
+        }
+    }
+}
+
+
+/* Bucle For */
+
+@for $i from 1 through 3 {
+    .btn-#{$i} {
+        width: $tamanoBoton/$i;
+        height: $tamanoBoton/$i;
+    }
+}
+
+
+/* Bucle Each */
+
+@each $red,
+$color in $redes {
+    .#{$red} {
+        background-color: $color;
+    }
+}
+
+.newButton {
+    /* Extend */
+    @extend .btn;
+    /* map-get() */
+    background-color: map-get($redes, whatsapp);
+}
+
+
+/* Mixin */
+
+@mixin bold {
+    font-weight: bold;
+}
+
+@mixin underline($color) {
+    text-decoration: underline;
+    text-decoration-color: $color;
+    text-decoration-style: double;
+}
+
+@mixin underline($color, $type) {
+    text-decoration: underline;
+    text-decoration-color: $color;
+    text-decoration-style: $type;
+}
+
+.btn-1 {
+    /* Include */
+    @include subrayado(rgb(255, 255, 255), double);
+    @include negrita;
+}
+
+.btn-2 {
+    @include subrayado(rgb(255, 255, 0), dotted);
+    @include negrita;
+}

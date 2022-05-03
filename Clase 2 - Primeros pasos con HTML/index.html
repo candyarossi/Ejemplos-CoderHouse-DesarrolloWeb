@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="shortcut icon" href="favicon.png">
 
 </head>
+
 <body>
     <!-- Listas desordenadas y tipos de viñeta -->
     <ul>
@@ -73,19 +75,19 @@
         <li>Item 3</li>
     </ol>
 
-    <!-- Listas de términos y descripciones -->
+    <!-- Listas de definición -->
     <dl>
         <dt>Termino 1</dt>
-            <dd>Descripcion 1</dd>
+        <dd>Descripcion 1</dd>
         <dt>Termino 2</dt>
-            <dd>Descripcion 2</dd>
+        <dd>Descripcion 2</dd>
     </dl>
 
     <!-- Listas en línea -->
     <ul>
-        <li style="float: left">Item 1</li>
-        <li style="float: left">Item 2</li>
-        <li style="float: left">Item 3</li>
+        <li style="float: left; list-style: none">Item 1</li>
+        <li style="float: left; list-style: none">Item 2</li>
+        <li style="float: left; list-style: none">Item 3</li>
     </ul>
 
     <br>
@@ -97,7 +99,7 @@
     </ul>
 
     <!-- Estructura básica de una tabla -->
-    <table>
+    <table border="1" cellpadding="2" cellspacing="2">
         <caption>Esta es una tabla</caption>
         <thead>
             <th>Encabezado 1</th>
@@ -130,7 +132,7 @@
     * method -> GET o POST
     * enctype -> application/x-www-form-urlencoded , multipart/form-data o text/plain 
     -->
-    <form action="#" method="GET" enctype="text/plain"> 
+    <form action="#" method="GET" enctype="multipart/form-data">
 
         <!-- Tipos de inputs -->
         <input name="..." type="text">
@@ -157,6 +159,8 @@
         <input name="..." type="reset" value="Reset">
         <input name="..." type="button" value="Button">
 
+        <textarea></textarea>
+
         <label for="texto">Label Texto:</label>
         <input name="texto" type="text" placeholder="Un texto...">
 
@@ -168,10 +172,10 @@
 
         <fieldset>
             <legend>Listas de Medidas para Calcular Talles:</legend>
-              <!-- Aquí irán los elementos de formulario -->
+            <!-- Aquí irán los elementos de formulario -->
         </fieldset>
     </form>
-    
+
     <!-- Enlaces -->
     <a href="https://www.coderhouse.com" target="_blank">Enlace</a>
 
@@ -195,8 +199,8 @@
     -->
     <video src="#" controls loop autoplay poster="#"> 
          Tu navegador no es compatible. 
-    </video> 
- 
+    </video>
+
     <!-- Etiqueta Audio
     Atributos:
     * src -> fuente del audio
@@ -213,4 +217,5 @@
     </iframe>
 
 </body>
+
 </html>

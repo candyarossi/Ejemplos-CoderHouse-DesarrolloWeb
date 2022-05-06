@@ -1,66 +1,81 @@
 /* Sintaxis CSS */
+
 selector {
     propiedad: valor;
 }
 
+
 /* Selector de etiqueta */
+
 body {
     color: brown;
 }
 
+
 /* Selector de ID */
+
 #main {
     color: brown;
 }
 
+
 /* Selector de CLASS */
-.media{
+
+.media {
     color: brown;
 }
 
+
 /* Padres e hijos */
-li a{
-    color:red;
+
+li a {
+    color: red;
     background-color: beige;
 }
 
+
 /* Important */
+
 a {
     color: black !important;
 }
 
+
 /* RESET */
+
+
 /* Uno muy completo: https://meyerweb.com/eric/tools/css/reset/ */
+
 * {
     margin: 0;
     padding: 0;
- }
+}
 
- /* Ppropiedades CSS */
+
+/* Ppropiedades CSS */
+
 p {
-
     /* COLOR */
-    color: black; 
+    color: black;
     /* 
     Otros valores: 
         #000000 
         rgb(0, 0, 0) 
-    */ 
-
+    */
     /* TEXTO */
-    font-family: 'Roboto' sans-serif;  
+    font-family: 'Roboto' sans-serif;
     font-size: 12px;
-    font-style: normal;  
+    font-style: normal;
     /* 
     Otros valores: 
         italic
     */
-    font-weight: normal;  
+    font-weight: normal;
     /* 
     Otros valores: 
         bold 
     */
-    text-align: left;  
+    text-align: left;
     /* 
     Otros valores: 
         right
@@ -73,27 +88,31 @@ p {
         underline 
         line-through 
     */
-    text-transform: uppercase;  
+    text-transform: uppercase;
     /* 
     Otros valores: 
         lowercase 
         capitalize 
     */
     line-height: 14px;
-
     /* FONDOS */
-    background-attachment: scroll;  
+    background-attachment: scroll;
     /* 
     Otros valores:
         fixed 
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment
      */
-    background-color: beige;  
+    background-color: beige;
     /* 
     Otros valores:
         rgb(0,0,0) 
         #000 
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/background-color
     */
     background-image: url('#');
+    /*
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/background-image
+    */
     background-position: top left;
     /* 
     Combinaciones: 
@@ -106,8 +125,9 @@ p {
         bottom left
         bottom center
         bottom right
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
     */
-    background-repeat: repeat-x; 
+    background-repeat: repeat-x;
     /* 
     Otros valores:
         repeat-x
@@ -117,22 +137,45 @@ p {
         round
         no-repeat
         space repeat
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat
     */
-} 
+    background-size: cover;
+    /*
+    Otros valores:
+        contain
+        cover
+        auto
+    - https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
+    */
+}
+
 
 /* LISTAS */
+
 ul {
     list-style-type: none;
 }
 
- /* 
+
+/* 
  Efecto PARALLAX 
  https://codepen.io/mablen/pen/bZKPNB 
  */
 
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
 
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
 body {
     font-family: 'Luxurious Roman', cursive;
 }
+
+
+/* RESOLUCIÓN DESAFÍO GENÉRICO 1 */
+
+.desafio1 {
+    color: orange;
+}
+
+
+/* FIN DESAFÍO 1 */

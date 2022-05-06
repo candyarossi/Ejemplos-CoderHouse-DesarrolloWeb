@@ -82,7 +82,9 @@ h1 {
     border-right: solid 10px blue;
     border-bottom: solid 7px green;
     border-left: solid 12px yellow;
+    /* Display: block / inline / inline-block / none */
     display: block;
+    /* Position: relative / absolute / fixed / sticky */
     position: fixed;
     top: 50px;
     right: 50px;
@@ -131,7 +133,7 @@ Por defecto, todos los objetos tienen z-index:1. Si dos objetos tienen el mismo 
 }
 
 
-/* Practica */
+/* RESOLUCIÓN DESAFÍO GENÉRICO 1 */
 
 #practica {
     color: #0033ff;
@@ -139,3 +141,6 @@ Por defecto, todos los objetos tienen z-index:1. Si dos objetos tienen el mismo 
     line-height: 15px;
     font-size: 12px;
 }
+
+
+/* FIN DESAFÍO 1 */

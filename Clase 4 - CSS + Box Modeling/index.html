@@ -15,15 +15,40 @@
 </head>
 
 <body>
-    <h1>CSS aplicado con un archivo externo</h1>
-    <h2>CSS aplicado con etiqueta style</h2>
-    <h3 style="color: purple;">CSS aplicado con atributo style</h3>
+    <header>
 
-    <h1 class="tituloFondoRosa">Título con CLASS</h1>
-    <h1 id="tituloFondoVioleta">Título con ID</h1>
+    </header>
+    <nav>
 
-    <!-- METODOLOGÍA BEM -->
-    <!--
+        <!-- Menú con SubMenú -->
+
+        <ul>
+            <li><a href="">Item</a></li>
+            <li><a href="">Item</a></li>
+            <li><a href="">Item</a>
+                <ul>
+                    <li><a href="">Subitem</a></li>
+                    <li><a href="">Subitem</a></li>
+                </ul>
+            </li>
+            <li><a href="">Item</a></li>
+        </ul>
+
+    </nav>
+    <section>
+        <article>
+
+            <h1>CSS aplicado con un archivo externo</h1>
+            <h2>CSS aplicado con etiqueta style</h2>
+            <h3 style="color: purple;">CSS aplicado con atributo style</h3>
+
+            <h1 class="tituloFondoRosa">Título con CLASS</h1>
+            <h1 id="tituloFondoVioleta">Título con ID</h1>
+
+        </article>
+
+        <!-- METODOLOGÍA BEM -->
+        <!--
         BEM significa Modificador de Bloques de Elementos (Block Element Modifier) 
         por sus siglas en inglés. Sugiere una manera estructurada de nombrar tus 
         clases, basada en las propiedades del elemento en cuestión.
@@ -31,7 +56,7 @@
         (div, section, article, ul, ol, etc.), elementos (a, button, li, span, etc.) 
         y modificadores. 
     -->
-    <!-- 
+        <!-- 
         BLOQUE
         El bloque es un contenedor o contexto donde el elemento se encuentra presente. 
         Por Ejemplo: Header, Main, Aside, etc.
@@ -48,13 +73,7 @@
         Cuando nombras una clase, la intención es ayudar a que ese elemento pueda ser repetido.
         Cuando necesitas modificar el estilo de un elemento específico, puedes usar un modificador. Para lograr esto, añade un doble guión -- luego del elemento (o bloque).
     -->
-    <header>
 
-    </header>
-    <nav>
-
-    </nav>
-    <section>
         <article class="noticia">
             <h1 class="noticia__titulo--modifier">
                 Lorem Ipsum
@@ -63,15 +82,8 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque consectetur urna, non blandit nulla hendrerit vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies neque dolor, mattis pretium justo dignissim quis.
             </p>
         </article>
-    </section>
-    <aside>
 
-    </aside>
-    <footer>
-
-    </footer>
-
-    <!--
+        <!--
         VENTAJAS:
         Añade especificidad.
         Aumenta la independencia.
@@ -84,7 +96,7 @@
         A algunas personas les puede tomar tiempo aprender la metodología.
         El sistema de organización puede ser difícil de implementar en proyectos pequeños.
     -->
-    <!--
+        <!--
         PARA QUE USARLO:
         Para simplificar nuestro CSS y conseguir un estilo consistente, por lo que nuestro 
         código será mucho más legible y fácil de mantener.
@@ -92,10 +104,10 @@
         Cuando trabajamos en equipo y cada miembro tiene una manera distinta de escribir CSS.
     -->
 
-    <!-- BREAK -->
+        <!-- BREAK -->
 
-    <!-- BOX MODEL - MODELO DE CAJA CSS -->
-    <!--
+        <!-- BOX MODEL - MODELO DE CAJA CSS -->
+        <!--
         Todos los elementos del HTML son cajas. 
         En los elementos de línea, se verá uno al lado del otro. SPAN
         En cambio en los de bloque, uno debajo del otro. DIV
@@ -109,36 +121,34 @@
         El tamaño de todos estos se SUMA.
     -->
 
-    <div class="boxModelSpan">
+        <article>
 
-    </div>
-    <div class="boxModelSpan">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque consectetur urna, non blandit nulla hendrerit vitae.
-    </div>
-    <div class="boxModelSpan">
+            <div class="boxModelSpan">
+            </div>
+            <div class="boxModelSpan">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque consectetur urna, non blandit nulla hendrerit vitae.
+            </div>
+            <div class="boxModelSpan">
+            </div>
 
-    </div>
+        </article>
 
-    <!-- Menú con SubMenú -->
+        <article>
 
-    <ul>
-        <li><a href="">Item</a></li>
-        <li><a href="">Item</a></li>
-        <li><a href="">Item</a>
-            <ul>
-                <li><a href="">Subitem</a></li>
-                <li><a href="">Subitem</a></li>
-            </ul>
-        </li>
-        <li><a href="">Item</a></li>
-    </ul>
+            <!-- RESOLUCIÓN DESAFÍO GENÉRICO 1 -->
+            <p id="practica">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque consectetur urna, non blandit nulla hendrerit vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies neque dolor, mattis pretium justo dignissim quis.
+            </p>
+            <!-- FIN DESAFÍO 1 -->
 
+        </article>
+    </section>
+    <aside>
 
-    <!-- RESOLUCIÓN DESAFÍO GENÉRICO 1 -->
-    <p id="practica">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque consectetur urna, non blandit nulla hendrerit vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies neque dolor, mattis pretium justo dignissim quis.
-    </p>
-    <!-- FIN DESAFÍO 1 -->
+    </aside>
+    <footer>
+
+    </footer>
 </body>
 
 </html>

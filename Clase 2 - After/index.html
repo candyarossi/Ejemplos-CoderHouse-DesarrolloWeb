@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>After Clase 2</title>
+</head>
+
+<body>
+    <header>
+        <h1>¡Bienvenido a tu tienda online favorita!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="productos.html">Productos</a>
+                    <ul>
+                        <li><a href="productos.html">Todos</a></li>
+                        <li><a href="productos.html#capilar">Capilar</a></li>
+                        <li><a href="productos.html#facial">Facial</a></li>
+                        <li><a href="productos.html#corporal">Corporal</a></li>
+                        <li><a href="productos.html#bano">Baño de Inmersión</a></li>
+                        <li><a href="productos.html#accesorios">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <input type="search" placeholder="Buscar...">
+        <a href="pages/carrito.html">Carrito</a>
+        <button>Registrarse</button>
+        <button>Ingresar</button>
+        <hr>
+    </header>
+    <section>
+        <article>
+            <h2>Tabla de Productos</h2>
+            <table border="1">
+                <tr>
+                    <th rowspan="2">Producto</th>
+                    <th rowspan="1" colspan="2">Variantes</th>
+                </tr>
+                <tr>
+                    <th rowspan="1">Tamaño</th>
+                    <th rowspan="1">Precio</th>
+                </tr>
+                <tr>
+                    <td>Shampoo Sólido</td>
+                    <td>55gr</td>
+                    <td>$ 845</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Acondicionador Sólido</td>
+                    <td>55gr</td>
+                    <td>$ 950</td>
+                </tr>
+                <tr>
+                    <td>15gr</td>
+                    <td>$ 355</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Jabón</td>
+                    <td>110gr</td>
+                    <td>$ 400</td>
+                </tr>
+            </table>
+            <hr>
+        </article>
+    </section>
+    <aside>
+        <form action="" method="GET" enctype="multipart/form-data">
+            <h2>Formulario de Compra</h2>
+            <fieldset>
+                <legend>Datos del Comprador:</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Nombre">
+                <br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" placeholder="Apellido">
+                <br>
+                <label for="dni">DNI:</label>
+                <input type="number" name="dni" placeholder="DNI" required>
+                <br>
+                <label for="telefono">Telefono:</label>
+                <input type="number" name="telefono" placeholder="Telefono">
+            </fieldset>
+            <fieldset>
+                <legend>Datos del Artículo:</legend>
+                <label for="articulo">Artículo:</label>
+                <select name="articulo">
+                    <option value="shampoo">Shampoo</option>
+                    <option value="acondicionador">Acondicionador</option>
+                    <option value="jabon">Jabón</option>
+                </select>
+                <br>
+                <label for="tamano">Tamaño:</label>
+                <input type="radio" name="tamano" id="chico" value="chico">
+                <label for="chico">Chico</label>
+                <input type="radio" name="tamano" id="grande" value="grande">
+                <label for="grande">Grande</label>
+                <br>
+                <label for="envoltorio">Envoltorio:</label>
+                <input type="checkbox" name="envoltorio" id="caja" value="caja">
+                <label for="caja">Caja</label>
+                <input type="checkbox" name="envoltorio" id="papel" value="papel">
+                <label for="papel">Papel</label>
+            </fieldset>
+            <fieldset>
+                <legend>Personalización:</legend>
+                <label for="archivo">Impresión de la etiqueta:</label>
+                <input type="file" name="archivo">
+                <br>
+                <label for="color">Color de la etiqueta:</label>
+                <input type="color" name="color">
+            </fieldset>
+            <fieldset>
+                <legend>Datos del Envío:</legend>
+                <label for="direccion">Dirección:</label>
+                <input type="text" name="direccion" placeholder="Dirección">
+                <br>
+                <label for="comentario">Comentario:</label>
+                <textarea name="comentario" placeholder="Escribir aqui..."></textarea>
+                <br>
+                <label for="fecha">Fecha a programar envío:</label>
+                <input type="date" name="fecha">
+            </fieldset>
+            <fieldset>
+                <legend>Información de Pago:</legend>
+                <label for="nroTarjeta">Número de Tarjeta:</label>
+                <input type="number" name="nroTarjeta" placeholder="Número de Tarjeta">
+                <br>
+                <label for="titular">Titular:</label>
+                <input type="text" name="titular" placeholder="titular">
+                <br>
+                <label for="vencimiento">Vencimiento:</label>
+                <input type="month" name="vencimiento" placeholder="Vencimiento">
+                <br>
+                <label for="cvv">CVV:</label>
+                <input type="password" name="cvv" placeholder="CVV" maxlength="3" pattern="[0-9]" title="Sólo se permiten números.">
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Vaciar">
+            <input type="button" value="Otro Botón">
+        </form>
+        <hr>
+    </aside>
+    <footer id="footer">
+        <ul>
+            <h3>Redes Sociales</h3>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>Youtube</li>
+            <li>Tiktok</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

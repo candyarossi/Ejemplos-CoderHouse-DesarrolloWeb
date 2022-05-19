@@ -37,3 +37,101 @@
     background-color: bisque;
     margin: 10px 10px 10px 10px;
 }
+
+
+/* FLEX BOX */
+
+.padre-flex,
+.padre-flex-2,
+.padre-flex-3 {
+    /* Convertimos el elemento en Flex */
+    display: flex;
+    /* Asignamos la dirección en la que se organizan los elementos. 
+    Puede ser: row (por defecto), column, row-reverse o column-reverse. */
+    flex-direction: row;
+    /* Asignamos la capacidad de saltar de línea en caso de ser necesario para conservar tamaños.
+    Puede ser: nowrap (por defecto), wrap o wrap-reverse. */
+    flex-wrap: wrap;
+    /* Podemos agrupar estas propiedades, primero el valor de flex-direction y luego el de flex-wrap. */
+    flex-flow: row wrap;
+    /* Asignamos el tipo de alineación del los items. 
+    Puede ser: flex-start (por defecto), flex-end, center, space-between, space-around o space-evenly */
+    justify-content: flex-start;
+    /* Todo esto se aplica también a flex-direction: column; */
+}
+
+.padre-flex-2 {
+    /* Alineación de los elementos hijos, con flex-direction: row o column.
+    Puede ser: stretch (por defecto), flex-end, flex-start, center o baseline */
+    align-items: stretch;
+}
+
+.padre-flex-3 {
+    /* Alinear varias líneas de elementos hijos. 
+    Puede ser: stretch (por defecto), flex-start, flex-end, center, space-between, space-around o space-evenly */
+    align-content: stretch;
+}
+
+.hijo-flex {
+    order: -1;
+}
+
+.hijo-flex-2 {
+    order: -2;
+}
+
+.hijo-flex-3 {
+    order: 1;
+}
+
+
+/* Página con Flexbox */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    /*border: solid 1px black;*/
+}
+
+nav {
+    width: 25%;
+    background-color: #ff99ff;
+}
+
+aside {
+    width: 25%;
+    background-color: #e0ff00;
+}
+
+article {
+    width: 50%;
+    background-color: #9cdcfe;
+}
+
+header {
+    height: 150px;
+}
+
+footer {
+    height: 50px;
+}
+
+header,
+footer {
+    background-color: #3dffbc;
+}
+
+article,
+nav,
+aside,
+header,
+footer {
+    padding: 1rem;
+    margin: 3px;
+}

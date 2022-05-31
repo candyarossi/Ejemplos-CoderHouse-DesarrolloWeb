@@ -1,0 +1,107 @@
+GIT: Hoja de Ruta
+
+-> Introducción, Instalación, Abrir GIT BASH
+* git --version
+
+-> Elegir un nombre de usuario y correo electrónico
+* git config --global user.name "candyarossi"
+* git config --global user.email candyarossi@gmail.com
+
+-> Comprobamos si se guardó
+* git config --list
+* git config user.name 
+* git config user.email 
+
+-> Pedir ayuda
+* git help config
+* git config --help
+* man git-config
+
+-> Crear un repo
+* cd Desktop/
+* git init mi_repo
+* dir
+* cd mi_repo
+
+-> Chequeamos el estado del repo
+* git status
+
+-> Creamos un HTML y agregamos algo
+
+-> Añadimos al Staging Area
+* git add index.html
+* git add .
+* git status
+
+-> Realizamos un commit
+* git commit -m "Comentario 1"
+* git status
+
+-> Ver historial
+* git log
+
+-> Git Graph en VSCODE**
+
+-> Hacer un cambio, otro commit y mostrar en graph
+
+-> Vemos en que rama estamos
+* git branch
+
+-> Creamos una rama
+* git branch mi_rama
+* git branch 
+
+-> Nos movemos de rama
+* git checkout mi_rama
+* git branch
+
+-> Creamos otra
+* git branch otra_rama
+* git branch
+
+-> Borramos la primera
+* git checkout master
+* git branch -D mi_rama
+* git branch
+
+-> Nos movemos a la rama
+* git checkout otra_rama
+
+-> Hacemos un cambio en el HTML
+* git add . 
+* git commit -m "Commit rama"
+
+-> Mostramos historial en una línea
+* git log --oneline
+
+-> Nos movemos a un commit
+* git checkout (id commit)
+* git branch
+* git checkout master
+
+-> Hacer una fusión
+* git merge otra_rama
+* git log --oneline
+
+-> Borrar un repo
+* rm -rf .git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

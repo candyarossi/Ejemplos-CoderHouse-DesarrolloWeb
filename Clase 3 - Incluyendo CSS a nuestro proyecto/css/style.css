@@ -95,24 +95,22 @@ p {
         capitalize 
     */
     line-height: 14px;
+}
+
+body {
     /* FONDOS */
     background-attachment: scroll;
     /* 
     Otros valores:
         fixed 
-    - https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment
      */
     background-color: beige;
     /* 
     Otros valores:
         rgb(0,0,0) 
         #000 
-    - https://developer.mozilla.org/en-US/docs/Web/CSS/background-color
     */
-    background-image: url('#');
-    /*
-    - https://developer.mozilla.org/en-US/docs/Web/CSS/background-image
-    */
+    background-image: url('../media/fondo.jpg');
     background-position: top left;
     /* 
     Combinaciones: 
@@ -125,7 +123,6 @@ p {
         bottom left
         bottom center
         bottom right
-    - https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
     */
     background-repeat: repeat-x;
     /* 
@@ -137,7 +134,6 @@ p {
         round
         no-repeat
         space repeat
-    - https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat
     */
     background-size: cover;
     /*
@@ -145,7 +141,6 @@ p {
         contain
         cover
         auto
-    - https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
     */
 }
 

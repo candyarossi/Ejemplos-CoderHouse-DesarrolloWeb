@@ -4,8 +4,10 @@ https://nodejs.org/es/download/
 Entrar a la página de Sass y buscar el comando para instalar desde consola:
 https://sass-lang.com/install
 - 'npm install -g sass'
-* Guía Sass: https://sass-lang.com/guide
+* Guía Sass: https://sass-lang.com/install
 
 Instalar las extensiones de VSCode: 
-- "Easy Sass" by Wojciech Sura: Compilador de Sass integrado y fácil de usar.
-- "Sass" by Syler: Indentación de Sass, resaltado de sintaxis, autocompletado y formateador. (Opcional)
+- "Live Server" by Ritwick Dey
+- "Live Sass Compiler" by Ritwick Dey
+- (Opcional v1) "Easy Sass" by Wojciech Sura
+- (Opcional) "Sass" by Syler

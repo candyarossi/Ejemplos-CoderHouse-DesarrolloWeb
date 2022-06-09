@@ -1,0 +1,112 @@
+/* Bootstrap Breakpoints */
+
+
+/* X-Small devices (portrait phones, less than 576px)
+   No media query for `xs` since this is the default in Bootstrap */
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {}
+
+
+/**/
+
+
+/* Media Queries */
+
+body {
+    background-color: #ad0302;
+}
+
+h1 {
+    text-align: left;
+}
+
+section,
+footer,
+hr {
+    color: white;
+}
+
+@media (max-width: 575px) {
+    body {
+        background-color: #0E6655;
+    }
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 868px) {
+    body {
+        background-color: #5B2C6F;
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    body {
+        background-color: #1A5276;
+    }
+}
+
+
+/**/
+
+
+/* Pseudoclases */
+
+
+/* Docu: https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes */
+
+.card-body a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    background-color: darkorange;
+}
+
+.card-body a:hover {
+    background-color: blueviolet;
+}
+
+.card-body a:link {
+    background-color: darkturquoise;
+}
+
+.card-body a:visited {
+    background-color: crimson;
+}
+
+.card-body a:active {
+    background-color: yellowgreen;
+}
+
+.card-body a:not(.boton) {
+    background-color: deeppink;
+}
+
+.card-body a:nth-child(2) {
+    background-color: dimgrey;
+}

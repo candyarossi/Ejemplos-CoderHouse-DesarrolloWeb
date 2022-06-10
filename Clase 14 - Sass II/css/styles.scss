@@ -90,11 +90,11 @@ $color in $redes {
 
 .btn-1 {
     /* Include */
-    @include subrayado(rgb(255, 255, 255), double);
-    @include negrita;
+    @include underline(rgb(255, 255, 255), double);
+    @include bold;
 }
 
 .btn-2 {
-    @include subrayado(rgb(255, 255, 0), dotted);
-    @include negrita;
+    @include underline(rgb(255, 255, 0), dotted);
+    @include bold;
 }

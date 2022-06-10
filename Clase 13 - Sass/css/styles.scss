@@ -1,5 +1,5 @@
-@import "_colores";
-@import "_tipografias";
+@import "colores";
+@import "tipografias";
 
 /*
 $tipografiaPrincipal: normal 24px/1.5 'Open Sans',
@@ -22,8 +22,9 @@ body {
     }
 }
 
+$colorHover: greenyellow;
 header div {
-    $colorHover: greenyellow;
+    /*$colorHover: greenyellow;*/
     background-color: lightblue;
     button {
         /*background-color: cadetblue !important;*/
@@ -33,7 +34,7 @@ header div {
         }
     }
 }
- 
+
 footer {
     background-color: $colorHover;
 }

@@ -1,0 +1,40 @@
+/*
+$tipografiaPrincipal: normal 24px/1.5 'Open Sans',
+sans-serif;
+$colorPrimario: cadetblue;
+*/
+body {
+  font: normal 24px/1.5 "Open Sans", sans-serif;
+}
+
+.row {
+  background-color: aquamarine;
+}
+
+.row div {
+  /*border: solid 2px cadetblue;*/
+  border: solid 2px cadetblue;
+}
+
+.row div h2 {
+  text-decoration: underline;
+}
+
+header div {
+  /*$colorHover: greenyellow;*/
+  background-color: lightblue;
+}
+
+header div button {
+  /*background-color: cadetblue !important;*/
+  background-color: cadetblue !important;
+}
+
+header div button:hover {
+  background-color: greenyellow !important;
+}
+
+footer {
+  background-color: greenyellow;
+}
+/*# sourceMappingURL=styles.css.map */

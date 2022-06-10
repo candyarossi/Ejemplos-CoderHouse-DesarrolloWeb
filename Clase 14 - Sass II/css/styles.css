@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/* Vars */
+/* Maps */
+/* Estilos generales */
+div {
+  height: 600px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn, .newButton {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  font-size: 24px;
+}
+
+@media (max-width: 550px) {
+  .btn, .newButton {
+    /* Operaciones: suma (+), resta (-) multiplicación(*), división (/) */
+    width: 125px;
+    height: 125px;
+    font-size: 12px;
+    /* Condicional */
+    /* Comparaciones: igual a (==), diferente a (!=), menor (<), mayor (>), menor o igual (<=), mayor o igual (>=) */
+    background-color: chartreuse;
+  }
+}
+
+/* Bucle For */
+.btn-1 {
+  width: 250px;
+  height: 250px;
+}
+
+.btn-2 {
+  width: 125px;
+  height: 125px;
+}
+
+.btn-3 {
+  width: 83.33333px;
+  height: 83.33333px;
+}
+
+/* Bucle Each */
+.facebook {
+  background-color: #3b5998;
+}
+
+.whatsapp {
+  background-color: #4dc247;
+}
+
+.youtube {
+  background-color: #bb0000;
+}
+
+.newButton {
+  /* Extend */
+  /* map-get() */
+  background-color: #4dc247;
+}
+
+/* Mixin */
+.btn-1 {
+  /* Include */
+  text-decoration: underline;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white;
+  -webkit-text-decoration-style: double;
+          text-decoration-style: double;
+  font-weight: bold;
+}
+
+.btn-2 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: yellow;
+          text-decoration-color: yellow;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  font-weight: bold;
+}
+/*# sourceMappingURL=styles.css.map */

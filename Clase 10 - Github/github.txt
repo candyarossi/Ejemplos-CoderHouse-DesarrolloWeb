@@ -1,0 +1,13 @@
+GITHUB: Hoja de Ruta
+
+-> Crear cuenta en Github
+
+-> Abrir repo en Git Bash 
+* git remote add origin https://github.com/programacion-eslm/mi_repo.git
+* git push -u origin master
+
+-> Github Pages:
+* Ir a Settings del repo
+* Sección Pages
+* Activarla y seleccionar la rama a usar
+* Guardar los cambios y acceder al link

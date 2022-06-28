@@ -85,23 +85,3 @@ GIT: Hoja de Ruta
 
 -> Borrar un repo
 * rm -rf .git
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

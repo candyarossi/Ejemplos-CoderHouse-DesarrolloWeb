@@ -1,0 +1,50 @@
+AFTER GIT/GITHUB: Hoja de Ruta
+
+-> Crear repositorio
+* git init
+
+-> Añadirlo al área de almacenamiento
+* git add . 
+
+-> Hacer el commit
+* git commit -m "Comentario"
+
+-> Añadir el origen remoto
+* git remote add origin https://github.com/nombreUsuario/nombreRepo.git
+
+-> Pushearlo a Github
+* git push -u origin main
+
+-> Loguearse (si lo pide)
+
+-> Crear una rama 
+* git branch animaciones
+
+-> Posicionarnos en la rama
+* git checkout animaciones
+
+-> Hacer cambios, git add y commit
+* git add . 
+* git commit -m "Comentario"
+
+-> Hacer push al origen en la nueva rama
+* git push --set-upstream origin animaciones 
+
+-> Loguearse (si lo pide)
+
+-> Entramos a Github, vamos al repo, comparamos y creamos un Pull Request
+
+-> Hacemos Merge desde el navegador o desde la consola
+* git pull origin main
+* git checkout main
+* git merge animaciones
+* git push 
+
+-> Actualizamos el repo local 
+* git pull origin main
+
+-> Creamos la Github Page en "Settings/Pages" del repo en GH
+
+-> Seleccionamos la rama a publicar y le damos "Save"
+
+-> Esperamos a que se publique y listo!

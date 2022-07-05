@@ -47,33 +47,6 @@
 
         </article>
 
-        <!-- METODOLOGÍA BEM -->
-        <!--
-        BEM significa Modificador de Bloques de Elementos (Block Element Modifier) 
-        por sus siglas en inglés. Sugiere una manera estructurada de nombrar tus 
-        clases, basada en las propiedades del elemento en cuestión.
-        Se centra en tres parámetros o variables posibles: bloques 
-        (div, section, article, ul, ol, etc.), elementos (a, button, li, span, etc.) 
-        y modificadores. 
-    -->
-        <!-- 
-        BLOQUE
-        El bloque es un contenedor o contexto donde el elemento se encuentra presente. 
-        Por Ejemplo: Header, Main, Aside, etc.
-        El bloque de elementos forma la raíz de la clase y siempre irá primero. 
-        El punto es mantener los nombres simples, claros, y precisos.
-        
-        ELEMENTO
-        El elemento es una de las piezas que compondrán la estructura de un bloque. 
-        El bloque es el todo, y los elementos son las piezas de este bloque.
-        De acuerdo a la metodología BEM, cada elemento se escribe después del bloque padre, 
-        usando dos guiones bajos.
-
-        MODIFICADOR
-        Cuando nombras una clase, la intención es ayudar a que ese elemento pueda ser repetido.
-        Cuando necesitas modificar el estilo de un elemento específico, puedes usar un modificador. Para lograr esto, añade un doble guión -- luego del elemento (o bloque).
-    -->
-
         <article class="noticia">
             <h1 class="noticia__titulo--modifier">
                 Lorem Ipsum
@@ -83,52 +56,14 @@
             </p>
         </article>
 
-        <!--
-        VENTAJAS:
-        Añade especificidad.
-        Aumenta la independencia.
-        Mejora la herencia múltiple.
-        Permite la reutilización.
-        Entrega simplicidad.
-
-        DESVENTAJAS:
-        Las convenciones pueden ser muy largas.
-        A algunas personas les puede tomar tiempo aprender la metodología.
-        El sistema de organización puede ser difícil de implementar en proyectos pequeños.
-    -->
-        <!--
-        PARA QUE USARLO:
-        Para simplificar nuestro CSS y conseguir un estilo consistente, por lo que nuestro 
-        código será mucho más legible y fácil de mantener.
-        Si estamos usando Bootstrap y queremos modificar ciertas clases.
-        Cuando trabajamos en equipo y cada miembro tiene una manera distinta de escribir CSS.
-    -->
-
-        <!-- BREAK -->
-
-        <!-- BOX MODEL - MODELO DE CAJA CSS -->
-        <!--
-        Todos los elementos del HTML son cajas. 
-        En los elementos de línea, se verá uno al lado del otro. SPAN
-        En cambio en los de bloque, uno debajo del otro. DIV
-        
-        Todas las etiquetas tienen propiedades en común:
-        - CONTENT: el espacio para el texto o imagen.
-        - PADDING: separación entre el borde y el contenido de la caja. Es un espacio interior.
-        - BORDER: el límite entre el elemento y el espacio externo.
-        - MARGIN: separación entre el borde y el afuera de la caja. Es un espacio exterior.
-
-        El tamaño de todos estos se SUMA.
-    -->
-
         <article>
 
-            <div class="boxModelSpan">
+            <div id="div1" class="boxModelDiv">
             </div>
-            <div class="boxModelSpan">
+            <div id="div2" class="boxModelDiv">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque consectetur urna, non blandit nulla hendrerit vitae.
             </div>
-            <div class="boxModelSpan">
+            <div class="boxModelDiv">
             </div>
 
         </article>

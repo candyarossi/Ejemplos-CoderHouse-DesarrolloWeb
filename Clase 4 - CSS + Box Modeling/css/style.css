@@ -49,7 +49,7 @@ h1 {
     padding: 0;
 }
 
-.boxModelSpan {
+.boxModelDiv {
     background-color: orange;
     /* Alto y Ancho */
     width: 100px;
@@ -83,13 +83,30 @@ h1 {
     border-bottom: solid 7px green;
     border-left: solid 12px yellow;
     /* Display: block / inline / inline-block / none */
-    display: block;
+    display: inline-block;
+}
+
+#div2 {
     /* Position: relative / absolute / fixed / sticky */
-    position: fixed;
+    position: absolute;
     top: 50px;
     right: 50px;
     bottom: 50px;
     left: 50px;
+}
+
+#div1 {
+    display: none;
+    position: relative;
+    /* Z-index (para el orden de superposición)
+       Elementos que tienen position se superponen. 
+       Esta propiedad acepta como valor un número (sin ninguna unidad).
+       A valor más alto, se mostrará por encima de los demás elementos. 
+       Por defecto, todos los objetos tienen z-index:1. 
+       Si dos objetos tienen el mismo valor de z-index y se superponen, el que fue creado después en el HTML se verá encima del otro.
+       Ambos elementos deben implementar position.
+    */
+    z-index: 2;
 }
 
 
@@ -119,17 +136,6 @@ ul ul li {
 
 ul li:hover ul {
     display: block;
-}
-
-
-/* z-index (para el orden de superposición)
-El z-index entra en juego cuando dos elementos que tienen position se superponen. Esta propiedad acepta como valor un número (sin ninguna unidad, ni px, ni cm, ni nada); a valor más alto, se mostrará por encima de los demás elementos. 
-
-Por defecto, todos los objetos tienen z-index:1. Si dos objetos tienen el mismo valor de z-index y se superponen, el que fue creado después en el HTML se verá encima del otro.
-*/
-
-.boxModelSpan {
-    z-index: -1;
 }
 
 
